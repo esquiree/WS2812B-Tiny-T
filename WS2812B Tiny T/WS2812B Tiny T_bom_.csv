@@ -1,0 +1,27 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C3 C4 C5 C6 C7 C8 C9,1uF,C_0805_HandSoldering,7,~
+2,Unpolarized capacitor,C,C1 C2,20pF,C_0805_HandSoldering,2,~
+3,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J1,Conn_01x02,CR2032 Housing,1,~
+4,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04,J2,Conn_01x04,Pin_Header_Straight_1x04_Pitch2.54mm,1,~
+5,"Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x04_Odd_Even,J3,Conn_02x04_Odd_Even,Pin_Header_Straight_2x04_Pitch2.54mm,1,~
+6,"20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8",ATtiny85-20PU,MCU1,ATtiny85-20PU,ATtiny85_SMD,1,http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf
+7,Resistor,R,R1,10k,R_0805,1,~
+8,"Push button switch, generic, two pins",SW_Push,SW1,SW_Push,SW_PUSH_6mm,1,
+9,"Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252",L7805,U41,L7805,TO-252-2,1,http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+10,,WS2812B,U1 U2 U3 U4 U5 U6 U7 U8 U9 U10 U11 U12 U13 U14 U15 U16 U17 U18 U19 U20 U21 U22 U23 U24 U25 U26 U27 U28 U29 U30 U31 U32 U33 U34 U35 U36 U37 U38 U39 U40,WS2812B,LED_WS2812B-PLCC4,40,
+11,"Four pin crystal (GND on pins 2 and 4), e.g. in SMD package",Crystal_GND24,Y1,Crystal_GND24,,1,~
+
+
+
+
+
+Component Groups:,11
+Component Count:,57
+Fitted Components:,57
+Number of PCBs:,1
+Total components:,57
+Schematic Version:,
+Schematic Date:,
+BoM Date:,3/24/2019 20:36:38
+Schematic Source:,C:\Users\Reed\Documents\Dr. Bai\WS2812B Tiny T\WS2812B Tiny T.sch
+KiCad Version:,Eeschema (5.0.0)

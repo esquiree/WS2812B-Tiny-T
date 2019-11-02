@@ -1,0 +1,83 @@
+
+(rules PCB WS2812B Tiny T
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 408)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 210.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 52.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_500:350_um"
+    (shape
+      (circle F.Cu 500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_500:350_um" "Via[0-1]_500:350_um" default
+  )
+  (via 
+    "Via[0-1]_500:350_um-kicad_default" "Via[0-1]_500:350_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_500:350_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_500:350_um-kicad_default"
+  )
+  (class default
+    "@:no_net_0"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(U39-Pad2)" GND +5V "Net-(U1-Pad2)" DIN "Net-(U2-Pad2)" "Net-(U3-Pad2)" "Net-(U4-Pad2)"
+    "Net-(U5-Pad2)" "Net-(U6-Pad2)" "Net-(U7-Pad2)" "Net-(U8-Pad2)" "Net-(U10-Pad4)" "Net-(U10-Pad2)" "Net-(U11-Pad2)" "Net-(U12-Pad2)"
+    "Net-(U13-Pad2)" "Net-(U14-Pad2)" "Net-(U15-Pad2)" "Net-(U16-Pad2)" "Net-(U17-Pad2)" "Net-(U18-Pad2)" "Net-(U19-Pad2)" "Net-(U20-Pad2)"
+    "Net-(U21-Pad2)" "Net-(U22-Pad2)" "Net-(U23-Pad2)" "Net-(U24-Pad2)" "Net-(U25-Pad2)" "Net-(U26-Pad2)" "Net-(U27-Pad2)" "Net-(U28-Pad2)"
+    "Net-(U29-Pad2)" "Net-(U30-Pad2)" "Net-(U31-Pad2)" "Net-(U32-Pad2)" "Net-(U33-Pad2)" "Net-(U34-Pad2)" "Net-(U35-Pad2)" "Net-(U36-Pad2)"
+    "Net-(U37-Pad2)" "Net-(U38-Pad2)" +BATT "Net-(J1-Pad2)" BTN PB3 PB4 PB0
+    RST
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
