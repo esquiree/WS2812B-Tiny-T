@@ -1,0 +1,242 @@
+(pcb "C:\Users\Reed\Documents\Dr. Bai\JTAG_TARGET_PWR\JTAG_TARGET_PWR.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.0.0)")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  157480 -92710  157630 -92860  157630 -93030  158812 -93707.7
+            159901 -94514.5  160890 -95441.8  161765 -96477.1  162515 -97606.7
+            163129 -98815.3  163599 -100087  163919 -101404  164084 -102750
+            164093 -104105  163946 -105453  163643 -106774  163190 -108052
+            162592 -109268  161858 -110408  160996 -111455  160020 -112395
+            160020 -120015  160020 -123190  157480 -125730  157480 -140970
+            156845 -141605  147955 -141605  147320 -140970  147320 -125730
+            144780 -123190  144780 -112395  144780 -112395  143804 -111455
+            142942 -110408  142208 -109268  141610 -108052  141157 -106774
+            140854 -105453  140707 -104105  140716 -102750  140881 -101404
+            141201 -100087  141671 -98815.3  142285 -97606.7  143035 -96477.1
+            143910 -95441.8  144899 -94514.5  145988 -93707.7  147164 -93032.3
+            147170 -92870  147320 -92720  147320 -82550  157480 -82550  157480 -92710)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 200)
+      (clearance 100.1)
+      (clearance 100.1 (type default_smd))
+      (clearance 25 (type smd_smd))
+    )
+  )
+  (placement
+    (component Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm
+      (place J1 149860 -87070 front 90 (PN "AVR-JTAG-10"))
+      (place J3 149860 -129540 back 90 (PN "AVR-JTAG-10"))
+    )
+    (component Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm::1
+      (place J2 149860 -138430 front 90 (PN "AVR-JTAG-10"))
+    )
+    (component "TEST:Single Dip Siwtch"
+      (place SW1 148590 -120650 front 90 (PN SW_SPST))
+    )
+    (component "TEST:CR2032 Housing"
+      (place U1 152400 -103250 front 0 (PN Bat))
+    )
+  )
+  (library
+    (image Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm
+      (outline (path signal 50  2850 1150  -1600 1150))
+      (outline (path signal 50  2850 -6250  2850 1150))
+      (outline (path signal 50  -1600 -6250  2850 -6250))
+      (outline (path signal 50  -1600 1150  -1600 -6250))
+      (outline (path signal 120  -1130 760  0 760))
+      (outline (path signal 120  -1130 0  -1130 760))
+      (outline (path signal 120  1577.53 695  2400 695))
+      (outline (path signal 120  760 695  962.47 695))
+      (outline (path signal 120  760 563.471  760 695))
+      (outline (path signal 120  760 -706.529  760 -563.471))
+      (outline (path signal 120  563.471 -760  706.529 -760))
+      (outline (path signal 120  -1130 -760  -563.471 -760))
+      (outline (path signal 120  2400 695  2400 -5775))
+      (outline (path signal 120  -1130 -760  -1130 -5775))
+      (outline (path signal 120  307.53 -5775  962.47 -5775))
+      (outline (path signal 120  1577.53 -5775  2400 -5775))
+      (outline (path signal 120  -1130 -5775  -307.53 -5775))
+      (outline (path signal 100  -1070 -217.5  -217.5 635))
+      (outline (path signal 100  -1070 -5715  -1070 -217.5))
+      (outline (path signal 100  2340 -5715  -1070 -5715))
+      (outline (path signal 100  2340 635  2340 -5715))
+      (outline (path signal 100  -217.5 635  2340 635))
+      (pin Oval[A]Pad_1000x1000_um 10 1270 -5080)
+      (pin Oval[A]Pad_1000x1000_um 9 0 -5080)
+      (pin Oval[A]Pad_1000x1000_um 8 1270 -3810)
+      (pin Oval[A]Pad_1000x1000_um 7 0 -3810)
+      (pin Oval[A]Pad_1000x1000_um 6 1270 -2540)
+      (pin Oval[A]Pad_1000x1000_um 5 0 -2540)
+      (pin Oval[A]Pad_1000x1000_um 4 1270 -1270)
+      (pin Oval[A]Pad_1000x1000_um 3 0 -1270)
+      (pin Oval[A]Pad_1000x1000_um 2 1270 0)
+      (pin Rect[A]Pad_1000x1000_um 1 0 0)
+    )
+    (image Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm::1
+      (outline (path signal 100  -217.5 635  2340 635))
+      (outline (path signal 100  2340 635  2340 -5715))
+      (outline (path signal 100  2340 -5715  -1070 -5715))
+      (outline (path signal 100  -1070 -5715  -1070 -217.5))
+      (outline (path signal 100  -1070 -217.5  -217.5 635))
+      (outline (path signal 120  -1130 -5775  -307.53 -5775))
+      (outline (path signal 120  1577.53 -5775  2400 -5775))
+      (outline (path signal 120  307.53 -5775  962.47 -5775))
+      (outline (path signal 120  -1130 -760  -1130 -5775))
+      (outline (path signal 120  2400 695  2400 -5775))
+      (outline (path signal 120  -1130 -760  -563.471 -760))
+      (outline (path signal 120  563.471 -760  706.529 -760))
+      (outline (path signal 120  760 -706.529  760 -563.471))
+      (outline (path signal 120  760 563.471  760 695))
+      (outline (path signal 120  760 695  962.47 695))
+      (outline (path signal 120  1577.53 695  2400 695))
+      (outline (path signal 120  -1130 0  -1130 760))
+      (outline (path signal 120  -1130 760  0 760))
+      (outline (path signal 50  -1600 1150  -1600 -6250))
+      (outline (path signal 50  -1600 -6250  2850 -6250))
+      (outline (path signal 50  2850 -6250  2850 1150))
+      (outline (path signal 50  2850 1150  -1600 1150))
+      (pin Rect[A]Pad_1000x1000_um 1 0 0)
+      (pin Oval[A]Pad_1000x1000_um 2 1270 0)
+      (pin Oval[A]Pad_1000x1000_um 3 0 -1270)
+      (pin Oval[A]Pad_1000x1000_um 4 1270 -1270)
+      (pin Oval[A]Pad_1000x1000_um 5 0 -2540)
+      (pin Oval[A]Pad_1000x1000_um 6 1270 -2540)
+      (pin Oval[A]Pad_1000x1000_um 7 0 -3810)
+      (pin Oval[A]Pad_1000x1000_um 8 1270 -3810)
+      (pin Oval[A]Pad_1000x1000_um 9 0 -5080)
+      (pin Oval[A]Pad_1000x1000_um 10 1270 -5080)
+    )
+    (image "TEST:Single Dip Siwtch"
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (outline (path signal 50  -1800 -9400  1800 -9400))
+      (outline (path signal 100  0 1600  1600 1600))
+      (outline (path signal 100  2050 1600  1600 1600))
+      (outline (path signal 100  1600 1600  2050 1600))
+      (outline (path signal 100  2050 1600  2050 -8850))
+      (outline (path signal 100  -2050 1600  0 1600))
+      (outline (path signal 100  -2050 1600  -2050 -8450))
+      (outline (path signal 100  0 -9200  2050 -9200))
+      (outline (path signal 100  2050 -9200  2050 -8850))
+      (outline (path signal 100  0 -9200  -2000 -9200))
+      (outline (path signal 100  -2000 -9200  -2050 -9200))
+      (outline (path signal 100  -2050 -9200  -2050 -8400))
+      (pin Oval[A]Pad_2200x2200_um 2 0 -7620)
+      (pin Rect[A]Pad_2200x2200_um 1 0 0)
+    )
+    (image "TEST:CR2032 Housing"
+      (outline (path signal 250  0 -12500  -3500 -12500))
+      (outline (path signal 250  -3500 -12500  -3500 -10500))
+      (outline (path signal 250  0 -12500  3000 -12500))
+      (outline (path signal 250  3000 -12500  3500 -12500))
+      (outline (path signal 250  3500 -12500  3500 -10500))
+      (outline (path signal 250  11000 0  10919.8 -1325.9  10680.4 -2632.47  10285.2 -3900.65
+            9740.02 -5111.95  9052.82 -6248.71  8233.62 -7294.35  7294.35 -8233.62
+            6248.71 -9052.82  5111.95 -9740.02  3900.65 -10285.2  2632.47 -10680.4
+            1325.9 -10919.8  0 -11000  -1325.9 -10919.8  -2632.47 -10680.4
+            -3900.65 -10285.2  -5111.95 -9740.02  -6248.71 -9052.82  -7294.35 -8233.62
+            -8233.62 -7294.35  -9052.82 -6248.71  -9740.02 -5111.95  -10285.2 -3900.65
+            -10680.4 -2632.47  -10919.8 -1325.9  -11000 0  -10919.8 1325.9
+            -10680.4 2632.47  -10285.2 3900.65  -9740.02 5111.95  -9052.82 6248.71
+            -8233.62 7294.35  -7294.35 8233.62  -6248.71 9052.82  -5111.95 9740.02
+            -3900.65 10285.2  -2632.47 10680.4  -1325.9 10919.8  0 11000
+            1325.9 10919.8  2632.47 10680.4  3900.65 10285.2  5111.95 9740.02
+            6248.71 9052.82  7294.35 8233.62  8233.62 7294.35  9052.82 6248.71
+            9740.02 5111.95  10285.2 3900.65  10680.4 2632.47  10919.8 1325.9
+            11000 0))
+      (pin Round[A]Pad_2500_um 1 0 8000)
+      (pin Round[A]Pad_2500_um 2 0 -11500)
+    )
+    (padstack Round[A]Pad_2500_um
+      (shape (circle F.Cu 2500))
+      (shape (circle B.Cu 2500))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1000x1000_um
+      (shape (path F.Cu 1000  0 0  0 0))
+      (shape (path B.Cu 1000  0 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_2200x2200_um
+      (shape (path F.Cu 2200  0 0  0 0))
+      (shape (path B.Cu 2200  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2200x2200_um
+      (shape (rect F.Cu -1100 -1100 1100 1100))
+      (shape (rect B.Cu -1100 -1100 1100 1100))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1000x1000_um
+      (shape (rect F.Cu -500 -500 500 500))
+      (shape (rect B.Cu -500 -500 500 500))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins J1-10 J1-2 J2-2 J2-10 J3-10 J3-2 U1-1)
+    )
+    (net TDI
+      (pins J1-9 J2-9 J3-9)
+    )
+    (net VCC
+      (pins J1-7 J2-7 J3-7 SW1-2)
+    )
+    (net RST
+      (pins J1-6 J2-6 J3-6)
+    )
+    (net TMS
+      (pins J1-5 J2-5 J3-5)
+    )
+    (net VREF
+      (pins J1-4 J2-4 J3-4)
+    )
+    (net TDO
+      (pins J1-3 J2-3 J3-3)
+    )
+    (net TCK
+      (pins J1-1 J2-1 J3-1)
+    )
+    (net "Net-(SW1-Pad1)"
+      (pins SW1-1 U1-2)
+    )
+    (class kicad_default "" GND "Net-(J1-Pad8)" "Net-(J2-Pad8)" "Net-(J3-Pad8)"
+      "Net-(SW1-Pad1)" RST TCK TDI TDO TMS VCC VREF
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 200)
+        (clearance 100.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
